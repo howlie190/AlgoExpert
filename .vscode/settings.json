@@ -3,6 +3,8 @@
         "vector": "cpp",
         "unordered_set": "cpp",
         "list": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "array": "cpp",
+        "functional": "cpp"
     }
 }
