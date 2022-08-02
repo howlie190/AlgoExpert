@@ -1,3 +1,5 @@
+#include <vector>
+
 using namespace std;
 
 bool isMonotonic(vector<int> array)
