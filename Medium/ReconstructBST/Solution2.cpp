@@ -1,3 +1,5 @@
+#include <limits>
+
 using namespace std;
 
 // This is an input class. Do not edit.
@@ -39,4 +41,12 @@ BST* reconstructBstFromRange(int lowerBound, int upperBound, vector<int> %preOrd
     bst->left  = leftSubtree;
     bst->right = rightSubtree;
     return bst;
+}
+
+BST* reconstructBst(vector<int> preOrderTraversalValues)
+{
+    auto treeInfo = TreeInfo{0};
+    return reconstructBstFromRange(numeric_limits<int>::min(),
+                                   numeric_limits<int>::max(),
+                                   preOrderTraversalValues, treeInfo);
 }
